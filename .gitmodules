@@ -1,0 +1,9 @@
+[submodule "premake"]
+	path = premake
+	url = https://github.com/d-led/premake-meta-cpp.git
+[submodule "deps/hayai"]
+	path = deps/hayai
+	url = https://github.com/nickbruun/hayai.git
+[submodule "deps/cppnanomsg"]
+	path = deps/cppnanomsg
+	url = https://github.com/nanomsg/cppnanomsg.git
