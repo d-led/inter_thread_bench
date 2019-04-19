@@ -1,6 +1,8 @@
 include 'premake'
+include 'conanbuildinfo.premake.lua'
 
 make_solution 'inter_thread_bench'
+    conan_basic_setup()
 
     removeplatforms {'x32'}
 
