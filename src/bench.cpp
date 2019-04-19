@@ -1,10 +1,20 @@
 #include <hayai.hpp>
+#include "synchronous/sync_fire_and_forget_sink.hpp"
 
-struct InterThreadBenchmark : public ::hayai::Fixture {
+struct SyncFireAndForgetSink : public ::hayai::Fixture {
+    sync_fire_and_forget_sink sink;
 };
 
-BENCHMARK_F(InterThreadBenchmark,SimpleAddition,1000,1000) {
-    2+2;
+struct AtomicFireAndForgetSink : public ::hayai::Fixture {
+    atomic_fire_and_forget_sink sink;
+};
+
+BENCHMARK_F(SyncFireAndForgetSink,one_way_ping,10000,100000) {
+    sink.do_ping(1);
+}
+
+BENCHMARK_F(AtomicFireAndForgetSink, one_way_ping, 10000, 100000) {
+    sink.do_ping(1);
 }
 
 int main(int argc, char* argv[])

@@ -20,9 +20,9 @@ make_solution 'inter_thread_bench'
 
 
     make_console_app('itbench',{
-    	'src/*.cpp',
-        'src/*.hpp',
-        'src/*.h',
+    	'src/**.cpp',
+        'src/**.hpp',
+        'src/**.h',
     	'premake5.lua'
     })
 
