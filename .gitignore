@@ -85,3 +85,9 @@ tools
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode
+conanbuildinfo.premake.lua
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json
+
+Build/
