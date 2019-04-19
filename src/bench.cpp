@@ -1,8 +1,4 @@
-#include <iostream>
 #include <hayai.hpp>
-#include <nn.hpp>
-#include <msgpack.hpp>
-#include <cereal/archives/binary.hpp>
 
 struct InterThreadBenchmark : public ::hayai::Fixture {
 };

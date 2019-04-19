@@ -4,12 +4,3 @@
 [submodule "deps/hayai"]
 	path = deps/hayai
 	url = https://github.com/nickbruun/hayai.git
-[submodule "deps/cppnanomsg"]
-	path = deps/cppnanomsg
-	url = https://github.com/nanomsg/cppnanomsg.git
-[submodule "deps/msgpack"]
-	path = deps/msgpack
-	url = https://github.com/msgpack/msgpack-c.git
-[submodule "deps/cereal"]
-	path = deps/cereal
-	url = https://github.com/USCiLab/cereal.git
